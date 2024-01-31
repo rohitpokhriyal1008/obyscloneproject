@@ -1,0 +1,16 @@
+.centerText  h2 {
+    font-size: 7.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 14vh;
+    border-bottom: .5vw solid #fff;
+    padding-bottom: .8vw;
+    transition: all ease .3s ;
+}
+
+.centerText h2:hover {
+      -webkit-text-stroke: 1px #fff;
+      color: transparent;
+      font-weight: 500;
+      border-bottom: .5vw solid black;
+}

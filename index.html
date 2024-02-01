@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <title>Obys Agency Clone</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
 
     <div id="main">
        
-        <div id="page1">
+        <div id="page1" data-scroll data-scroll-speed="-2">
             <nav>
                 <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
                     <path d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z" fill="currentColor"></path>
@@ -48,7 +49,7 @@
                     </div>
             </nav>
             
-                <div class="centerText"><h1 >we design</h1></div>
+                <div class="centerText" id="num" ><h1>we design</h1></div>
                 <div class="centerText"> <h1 >unique</h1></div>
                 <div class="centerText" id="text3">
                      <h2 >web</h2>
@@ -60,21 +61,21 @@
            
         </div>
 
-        <div id="page2">
+        <div id="page2" data-scroll data-scroll-speed="3">
             
             <div id="video-container">
                 <div id="video-cursor"><i class="ri-play-fill"></i></div>
                 <img src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg" alt="">
 
-                <video autoplay loop muted src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
+                <video  loop muted src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
             </div>
         </div>
 
-        <div id="page3">
+        <div id="page3" data-scroll data-scroll-speed="-2">
 
         </div>
 
-        <div id="page4">
+        <div id="page4" data-scroll data-scroll-speed="-2">
             <div id="page4-content">
                 <h1>about obys</h1>
                 <div class="underline"></div>
@@ -153,11 +154,70 @@
                     </div>
             </div>
 
-            
+          <div id="page5" data-scroll data-scroll-speed="-2">
+            <div id="page5-content">
+             <div class="elem">
+                <h1><span>fashion</span>-sport-technology-</h1>
+                <h1><span>fashion</span>-sport-technology-</h1>
+             </div>
+             <div class="elem2">
+                <h1><span>beauty</span>-real state- architecture-</h1>
+                <h1><span>beauty</span>-real state- architecture-</h1>
+             </div>
+             <div class="elem">
+                <h1><span>travel</span>-science-partners-</h1>
+                <h1><span>travel</span>-science-partners-</h1>
+             </div>
+             <div class="elem2">
+                <h1><span>music</span>-hotels-automobile-</h1>
+                <h1><span>music</span>-hotels-automobile-</h1>
+             </div>
+            </div>
+          </div>
+
+       <div id="footer">
+            <div id="footer-content">
+                    <h1>let's create</h1>
+
+                     <div class="underline"></div>
+
+                <div id="box">
+
+                       <div>
+                        <h6>Socials</h6>
+                        <h5>Dribbble</h5>
+                        <h5>Behance</h5>
+                        <h5>Instagram</h5>
+                        <h5>Facebook</h5>
+                        <h5> Twitter</h5>
+                        <h5>YouTube</h5>
+                       </div>
+
+                       <div>
+                        <h6>Address</h6>
+                        <h5>Pushkinska 5</h5>
+                        <h5>61057 Kharkiv</h5>
+                        <h5> Ukraine</h5>
+                       </div>
+
+                       <div>
+                         <h6> Say Hi!</h6>
+                         <h5>info@obys.agency</h5>
+                       </div>
+
+                </div>
+                <div class="underline"></div>
+                <h4>
+                    Obys Agency © 2024</h4>
+             </div>
+             
+         </div>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="obysagencyclone.js"></script>
 </body>
 </html>

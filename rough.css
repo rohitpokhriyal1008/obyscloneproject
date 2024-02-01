@@ -1,0 +1,16 @@
+#box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #3F7DF4;
+    margin: 19vh 0;
+}
+
+#box h6 {
+    font-size: 1.2vw;
+    margin-bottom: 7vh;
+}
+#box h5 {
+    font-size: 1.7vw;
+    margin-bottom: 1vh;
+}

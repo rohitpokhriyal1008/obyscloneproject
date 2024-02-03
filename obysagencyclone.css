@@ -10,17 +10,13 @@ html,body {
     height: 100%;
     width: 100%;
 }
-#cursor {
-    height: 3.2vh;
-    width: 2vw;
-    /* background-color: white; */
-    border: 1px solid whitesmoke;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 9999;
+.mousefollower {
+    border: 1px solid #fff;
+    background-color: rgb;
+    scale: 2;
     mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
 }
+
 #loader {
     /* border: 5px solid orange; */
     height: 100%;
@@ -188,6 +184,8 @@ nav {
     position: relative;
     left: 28vw;
     background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 #video-container img {
@@ -202,6 +200,7 @@ nav {
     width: 100%;
     object-fit: cover;
     position: absolute;
+    opacity: 0;
 }
 #video-cursor {
     background-color: #FFA63C;
@@ -220,19 +219,158 @@ nav {
 #video-cursor i {
     font-size: 3vw;
 }
-
+/* ------------------3rd page--------------- */
 #page3 {
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(29, 52, 183);
+    background-color: #151515;
+    position: relative;
+    margin-bottom: 45vh;
+
+}
+#page3 h1{
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    margin-bottom: 10vh;
+    position: relative;
+    margin-left: 28vw;
+}
+#page3 .underline {
+    width: 66%;
+    margin-left: 28vw;
+    
+} 
+#page3 h1::before {
+    content: "02";
+    font-size: 3.2vw;
+    font-family: "silk serif";
+    font-weight: 100;
+    position: absolute;
+    top: 1.5vh;
+    left: -10vw;
+
+}
+#image-container {
+    /* background-color: red; */
+    padding: 2vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.image-div {
+    height: 75vh;
+    width: 30vw;
+    /* background-color: aqua; */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw;
+}
+.image-div:nth-child(1) {
+    height: 60vh;
+    width: 25vw;
+}
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.circle-div1 {
+    height: 30vh;
+    width: 18vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35vh;
+    margin-left: 13vw;
+    position: relative;
+
+}
+.circle-div1 svg {
+    height: 40%;
+}
+.circle-div2 {
+    height: 30vh;
+    width: 18vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.circle-div2 svg {
+    height: 40%;
+    rotate: -45deg;
+}
+.circle-in {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: all ease .4s;
+    
+}
+.circle-in p {
+    color: #0B0B0B;
+    font-weight: 500;
+    width: 85%;
+    transition: all ease .5s;
+    transition-delay: 0.3s;
+    scale: 0;
+    opacity: 0;
+   
+}
+.circle-div1:hover .circle-in{
+    scale: 1;
+    
 }
 
+.circle-div1:hover .circle-in p {
+    scale: 1;
+    opacity: 1;
+}
+
+.circle-div2:hover .circle-in{
+    scale: 1;
+    
+}
+
+.circle-div2:hover .circle-in p {
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------3rd page end--------------- */
 #page4 {
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
     position: relative;
-    padding-top: 5vh;
+    padding-top:5vh;
 }
 
 #page4-content {
@@ -261,7 +399,7 @@ nav {
 
 .underline {
     height: .2vh;
-    width: 100%;
+    width: 93%;
     background-color: #ffffff;
     margin-bottom: 6vh;
 }

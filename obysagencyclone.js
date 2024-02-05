@@ -85,7 +85,26 @@ function cursorMovement() {
        
      })
 }
+function flagMove(){
+    document.addEventListener("mousemove", function(details) {
+         gsap.to("#flag", {
+            x: details.x -100,
+            y: details.y
+         })
+    })
+    document.querySelector("#text3").addEventListener("mouseenter",function(){
+         gsap.to("#flag", {
+            opacity: 1,
 
+         })
+    })
+    document.querySelector("#text3").addEventListener("mouseleave",function(){
+        gsap.to("#flag", {
+           opacity: 0,
+
+        })
+   })
+}
 
 function loaderPage() {
     let tl = gsap.timeline();
@@ -161,7 +180,7 @@ function sheryAnimation() {
 locomotiveAnimation();
 cursorMovement();
  loaderPage();
- //sheryAnimation();
- 
+ sheryAnimation();
+ flagMove();
 
 

@@ -1,0 +1,55 @@
+
+  
+  .hover-effect h1 span {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .hover-effect:hover h1 span {
+    opacity: 1;
+  }
+  
+  .hover-effect:hover h1 span:nth-child(1) {
+    font-style: italic;
+    transition-delay: 0.1s;
+  }
+  
+  .hover-effect:hover h1 span:nth-child(2) {
+    font-style: italic;
+    transition-delay: 0.2s;
+  }
+  
+  .hover-effect:hover h1 span:nth-child(3) {
+    font-style: italic;
+    transition-delay: 0.3s;
+  }
+  .hover-effect:hover h1 span:nth-child(4) {
+    font-style: italic;
+    transition-delay: 0.4s;
+  }
+  .hover-effect:hover h1 span:nth-child(5) {
+    font-style: italic;
+    transition-delay: 0.5s;
+  }
+  .hover-effect:hover h1 span:nth-child(6) {
+    font-style: italic;
+    transition-delay: 0.6s;
+  }
+  .hover-effect:hover h1 span:nth-child(7) {
+    font-style: italic;
+    transition-delay: 0.7s;
+  }
+  .hover-effect:hover h1 span:nth-child(8) {
+    font-style: italic;
+    transition-delay: 0.8s;
+  }.hover-effect:hover h1 span:nth-child(9) {
+    transition-delay: 0.9s;
+  }.hover-effect:hover h1 span:nth-child(10) {
+    transition-delay: 10s;
+  }.hover-effect:hover h1 span:nth-child(11) {
+    transition-delay: 11s;
+  }
+  
+  /* Add more nth-child styles for each letter */
+  

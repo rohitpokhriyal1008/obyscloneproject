@@ -114,7 +114,7 @@ function loaderPage() {
         y: 120,
         stagger: 0.25,
         duration: 0.6,
-        delay: .1
+        delay: .5
     })
     
     
@@ -137,21 +137,21 @@ function loaderPage() {
     })
     
     tl.to(".line h2", {
-        animationName: "anime",
-        opacity: 1
+        animationName: "anime1",
+        opacity: 1,
     })
     
     
     tl.to("#loader", {
         opacity:0,
-        duration: 0,
-        delay: 0
+        duration: .2,
+        delay: 2
     })
     tl.from("#page1", {
         opacity: 0,
         y: 2000,
         delay: .1,
-       
+        duration: 0.5
     })
     
     tl.to("#loader", {
@@ -177,10 +177,11 @@ function sheryAnimation() {
     })
 }
 
+
+
 locomotiveAnimation();
 cursorMovement();
  loaderPage();
  sheryAnimation();
  flagMove();
-
 
